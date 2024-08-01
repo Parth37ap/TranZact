@@ -1,0 +1,236 @@
+.Banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.Banner-text {
+    flex: 1;
+    padding-right: 20px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.Banner-video {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 630px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.Banner-buttons {
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.text1, .text2 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 49px;
+}
+
+.text2 {
+    color: #0ab384;
+}
+
+.b-hr {
+    width: 55px;
+    height: 5px;
+    background-color: #0ab384;
+    margin-left: 3px;
+}
+
+.text3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-h {
+    color: #0ab384;
+}
+
+.button1 {
+    padding: 10px 15px;
+    background-color: #0ab384;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button1:hover {
+    transform: scale(1) translateY(-3px);
+    background-color: #0ab384;
+}
+
+.button2 {
+    padding: 9px 15px;
+    background-color: white;
+    margin-left: 6px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-width: 1.5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button2:hover {
+    transform: scale(1) translateY(-3px);
+}
+
+.text4 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: gray;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .Banner {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .Banner-text {
+        text-align: center;
+        padding: 0;
+    }
+
+    .video {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+    .Banner-buttons {
+        display: flex; /* Display buttons on mobile */
+    }
+
+    .button1, .button2 {
+        width: 170%;
+        margin-top: 10px;
+        line-height: 1.5rem;
+    }
+
+    .text1, .text2 {
+        font-size: 30px;
+    }
+
+    .text3 {
+        font-size: 18px;
+    }
+
+    .text4 {
+        font-size: 16px;
+    }
+
+    /* Hide desktop buttons on mobile */
+    .Banner-text .button1,
+    .Banner-text .button2 {
+        display: none;
+    }
+}
+
+/* Media query for small screens and laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Banner {
+        flex-direction: row;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .Banner-text {
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    .video {
+        width: 380px;
+        height: 225px;
+    }
+
+    .Banner-buttons {
+        display: none;
+    }
+
+    .button1, .button2 {
+        width: auto;
+        margin-top: 0;
+        line-height: normal;
+    }
+
+    .text1, .text2 {
+        font-size: 30px;
+    }
+
+    .text3 {
+        font-size: 18px;
+    }
+
+    .text4 {
+        font-size: 17px;
+    }
+}
+
+/* Media query for desktops and large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .Banner {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .Banner-text {
+        padding-right: 15px;
+        text-align: left;
+    }
+
+    .video {
+        width: 540px;
+        height: 320px;
+    }
+
+    .Banner-buttons {
+        display: none;
+    }
+
+    .button1, .button2 {
+        width: auto;
+        margin-top: 0;
+        line-height: normal;
+    }
+
+    .text1, .text2 {
+        font-size: 45px;
+    }
+
+    .text3 {
+        font-size: 20px;
+    }
+
+    .text4 {
+        font-size: 18px;
+    }
+}

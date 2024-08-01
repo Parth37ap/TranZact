@@ -1,0 +1,149 @@
+.Sales {
+    text-align: center;
+    overflow: hidden; 
+    width: 100%;
+    background-color: white;
+}
+
+.line-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2.5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.line-containers::before,
+.line-containers::after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: #f6e1cc;
+}
+
+.line-texts {
+    padding: 0 10px;
+    background-color: white; 
+    position: relative;
+    z-index: 1;
+}
+
+.text-ss {
+    font-family: sans-serif;
+    font-size: 23px;
+    color: #47390a;
+}
+
+.sales-containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px; 
+}
+
+.box1s {
+    text-align: center;
+    flex: 1 1 auto; 
+    max-width: 300px; 
+}
+
+.s-texts {
+    color: #0e412a;
+    line-height: 0.5rem;
+    font-size: 17px;
+}
+
+.s-buttons {
+    padding: 10px 15px;
+    background-color: #0ab384;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.s-buttons:hover {
+    transform: scale(1) translateY(-3px);
+    background-color: #0ab384;
+}
+
+/* Responsive Styles */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .line-texts h3 {
+        font-size: 18px;
+    }
+
+    .sales-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1s {
+        max-width: 100%;
+    }
+
+    .s-texts {
+        font-size: 14px;
+    }
+
+    .s-buttons {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .line-texts h3 {
+        font-size: 20px;
+    }
+
+    .sales-containers {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .box1s {
+        max-width: 45%;
+    }
+
+    .s-texts {
+        font-size: 16px;
+    }
+
+    .s-buttons {
+        width: auto;
+        font-size: 15px;
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .line-texts h3 {
+        font-size: 22px;
+    }
+
+    .sales-containers {
+        justify-content: space-evenly;
+    }
+
+    .box1s {
+        max-width: 30%;
+    }
+
+    .s-texts {
+        font-size: 17px;
+    }
+
+    .s-buttons {
+        font-size: 16px;
+    }
+}

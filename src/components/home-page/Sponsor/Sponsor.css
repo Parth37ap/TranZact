@@ -1,0 +1,121 @@
+.sponsor-section {
+    text-align: center;
+    overflow: hidden; /* Hide overflow to create scrolling effect */
+    width: 100%;
+    background-color: white;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2.5%; /* Adds equal space to left and right sides */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    position: relative;
+}
+
+.line-container::before,
+.line-container::after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background-color: #f6e1cc;
+}
+
+.line-text {
+    padding: 0 10px; /* Adjust padding as needed */
+    background-color: white; /* Match the background color of your container */
+    position: relative;
+    z-index: 1;
+}
+
+.text-s1 {
+    font-family: sans-serif;
+    font-size: 23px;
+    color: #47390a;
+}
+
+.sponsor-images {
+    display: flex;
+    width: 29000px; /* Make the container wider to allow seamless scrolling */
+    height: 200px;
+    overflow: hidden; /* Hide overflow to create scrolling effect */
+    position: relative;
+    animation: scroll 20s linear infinite; /* Adjust duration for the scrolling effect */
+}
+
+.sponsor-img {
+    width: 12.5%; /* Adjust width according to the number of images in a row */
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10%); 
+    }
+}
+
+@media (max-width: 768px) {
+    .text-s1 {
+        font-size: 15px;
+    }
+
+    .sponsor-images {
+        height: 150px; 
+        width: 20000px;
+    }
+
+    .sponsor-img {
+        width: 25%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .text-s {
+        font-size: 20px; 
+    }
+
+    .sponsor-images {
+        height: 175px; 
+        width: 23000px; 
+    }
+
+    .sponsor-img {
+        width: 16.66%; 
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .text-s {
+        font-size: 22px;
+    }
+
+    .sponsor-images {
+        height: 200px;
+        width: 200%; 
+    }
+
+    .sponsor-img {
+        width: 12.5%; 
+    }
+}
+
+@media (min-width: 1201px) {
+    .text-s {
+        font-size: 23px; 
+    }
+
+    .sponsor-images {
+        height: 200px;
+        width: 26000px; 
+    }
+
+    .sponsor-img {
+        width: 12.5%; 
+    }
+}

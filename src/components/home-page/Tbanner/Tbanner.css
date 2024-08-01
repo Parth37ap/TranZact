@@ -1,0 +1,41 @@
+.T-banner {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: #05b384;
+    padding: 40px ;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.Tz-img img {
+    padding: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+.Tz-text {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+@media (max-width: 768px) {
+    .T-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .Tz-img img {
+        max-width: 80%;
+    }
+
+    .Tz-text {
+        max-width: 100%;
+    }
+}

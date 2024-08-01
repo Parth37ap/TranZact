@@ -1,0 +1,123 @@
+/* Navbar.css */
+
+.container {
+    width: auto;
+    height: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-img .logo {
+    height: 27px;
+    width: auto;
+    margin-left: 38px;
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: auto; /* Pushes the items to the right */
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.a2 {
+    color: #117fd6;
+}
+
+.a2:hover {
+    text-decoration: underline;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #074c5e;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1) translateY(-3px);
+    background-color: #056080;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        box-shadow: 0 30px 30px -20px rgba(50, 50, 93, 0.23);
+        left: 0;
+        top: 50px;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: white;
+        padding: 0;
+    }
+
+    ul li {
+        padding: 20px;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-align: left;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .divider {
+        margin: 0;
+    }
+}
